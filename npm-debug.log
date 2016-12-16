@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose config Skipping project config: C:\Users\Cody/.npmrc. (matches userconfig)
+5 verbose readDependencies loading dependencies from C:\Users\Cody\package.json
+6 error install Couldn't read dependencies
+7 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\Cody\package.json'
+7 verbose stack     at Error (native)
+8 verbose cwd C:\Users\Cody\Desktop\Projects\news-ping-current
+9 error Windows_NT 10.0.14393
+10 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+11 error node v4.5.0
+12 error npm  v2.15.9
+13 error path C:\Users\Cody\package.json
+14 error code ENOPACKAGEJSON
+15 error errno -4058
+16 error syscall open
+17 error package.json ENOENT: no such file or directory, open 'C:\Users\Cody\package.json'
+17 error package.json This is most likely not a problem with npm itself.
+17 error package.json npm can't find a package.json file in your current directory.
+18 verbose exit [ -4058, true ]

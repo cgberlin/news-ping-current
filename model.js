@@ -11,6 +11,7 @@ function initMap() {
 }
 
 function getNews(searchedTerm){
+  $('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000);
   $('#result-box').html("<h3>Results</h3><br/>")
   var data =  $.ajax({
       url: 'https://webhose.io/search?token=6d04227b-527e-44e7-8a24-02f82b35d219&format=json&q=' + searchedTerm + '&sort=relevancy', // The URL to the API. You can get this in the API page of the API you intend to consume
@@ -39,7 +40,7 @@ function processData(data, searchedTerm){
           for (var i=0; i < 11; i++){
             console.log(data.posts[i]);
             $('#result-box').append("<p>" + data.posts[i].title + "<p><br/>");
-
+            $('#secondary-result-box').append("<p>" + data.posts[i].title + "<p><br/>");
             var infowindow = new google.maps.InfoWindow({
                               content: data.posts[i].text
                             });

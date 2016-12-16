@@ -63,3 +63,31 @@ body {
   display:none;
   text-align: center;
 }
+#secondary-result-box {
+  display: none;
+}
+@media only screen and (max-width: 760px){
+  #left-rail {
+    display: none;
+  }
+  #right-rail {
+    display: none;
+  }
+  #middle-map {
+    width:100% !important;
+  }
+  #secondary-result-box {
+    display: flex;
+    flex-flow: column;
+    width:100% !important;
+  }
+  #secondary-result-box > h3 {
+    text-align: center;
+  }
+  #main-title {
+    font-size:5rem;
+  }
+  #main-title, #stick-me {
+    margin:0 auto;
+  }
+}
