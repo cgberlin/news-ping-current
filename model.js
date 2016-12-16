@@ -40,7 +40,7 @@ function processData(data, searchedTerm){
           for (var i=0; i < 11; i++){
             console.log(data.posts[i]);
             $('#result-box').append("<p>" + data.posts[i].title + "<p><br/>");
-
+            $('#secondary-result-box').append("<p>" + data.posts[i].title + "<p><br/>");
             var infowindow = new google.maps.InfoWindow({
                               content: data.posts[i].text
                             });

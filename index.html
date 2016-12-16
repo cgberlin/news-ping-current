@@ -31,15 +31,15 @@
         </div>
       </div>
       <div class="ui grid container" id = "main-container-map">
-        <div class="ui four wide column">
+        <div class="ui four wide column" id = "left-rail" >
         </div>
-        <div class="ui segment eight wide column">
+        <div class="ui segment eight wide column" id = "middle-map">
           <div class="ui left rail">
             <div class="ui segment">
               <h3>Enter a country, city, or keyword to search. <br/>It will display results and data both on the map and on the right.</h3>
             </div>
           </div>
-          <div class="ui right rail">
+          <div class="ui right rail" id = "right-rail">
             <div class="ui segment" id = "result-box">
               <h3>Results</h3>
             </div>
@@ -48,7 +48,10 @@
             <div id = 'google-map'></div>
           </div>
         </div>
-        <div class="ui four wide column">
+          <div class="ui four wide column" id = "right-rail">
+        </div>
+        <div class = "ui twelve wide row" id = "secondary-result-box">
+          <h3>Results</h3>
         </div>
       </div>
 
