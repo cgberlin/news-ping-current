@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $('.ui.sticky')
   .sticky({
-    context: '#google-map'
+    context: '#google-map',
+    offset: 20
   });
 });
 $('#search-term').keydown(function(event){
@@ -15,3 +16,4 @@ $('#search-button').on('click', function(){
     getNews(searchedTerm);
     $('#loading').fadeIn(3000);
 });
+

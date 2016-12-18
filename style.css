@@ -66,6 +66,9 @@ body {
 #secondary-result-box {
   display: none;
 }
+#search-term, #search-button {
+  box-shadow: 0 0 4px black;
+}
 @media only screen and (max-width: 760px){
   #left-rail {
     display: none;
